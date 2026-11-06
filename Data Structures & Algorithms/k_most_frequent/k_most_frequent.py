@@ -28,7 +28,7 @@ def top_k_frequent(words: list[str], k: int) -> list[str]:
     # Python calls it once per word and sorts by the returned tuples, not the words themselves.
 
     # More about (-counts[w], w)
-    # -count: frequency
+    # -count: frequency (with the highest for us at the top because they are negative. example: [-1, -2, -3] we know it 3 that is the biggest)
     # w: if elements are tied, sort by alpabetical order
     # Say "i" and "love" both have count 2:
     # (-2, "i")  vs  (-2, "love")
