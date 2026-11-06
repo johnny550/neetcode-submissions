@@ -9,8 +9,13 @@ l=[[]  for i in range(len(base_list))]
 print(l)
 
 # everything reversed
-l=[1,2,3,4,5]
+l=[2,3,1,4,5]
 print(l[::-1])
 for i in range(len(l),0,-1):
     print(f"reverted: {i}")
 print(sorted(l,reverse=True))
+
+import heapq
+print(f"original list {l}")
+heapq.heapify_max(l)
+print(f"heapified list {l}")
