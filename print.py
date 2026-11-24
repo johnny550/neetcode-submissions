@@ -1,12 +1,15 @@
+# REVERSE
 l=[0,1,2,3]
 print(l[:-1])
 
+# LAST ELEMENT
 l=[0,1]
-print(l[-1])
+print(f"last el {l[-1]}")
 
+# A LIST B MADE OF AS MANY LISTS AS A LIST A CONTAINS NUMBERS
 base_list=[1,2,3,4,5]
-l=[[]  for i in range(len(base_list))]
-print(l)
+# l=[[]  for i in range(len(base_list))]
+print(f"list B: {l}")
 
 # everything reversed
 l=[2,3,1,4,5]
