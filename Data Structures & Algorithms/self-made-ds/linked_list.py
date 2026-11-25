@@ -34,3 +34,10 @@ class LinkedList:
             print(curr.val, " -> ", end="")
             curr = curr.next
         print()
+
+if __name__ == "__main__":
+    linked_list = LinkedList()
+    linked_list.insertEnd(1)
+    linked_list.insertEnd(2)
+    linked_list.insertEnd(3)
+    linked_list.print()
