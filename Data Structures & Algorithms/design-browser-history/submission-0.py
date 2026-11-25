@@ -5,7 +5,7 @@ class HistoryNode:
         self.prev = prev
 
 class BrowserHistory:
-
+    # doubly linked list
     def __init__(self, homepage: str):
         self.head = HistoryNode(homepage)
         
