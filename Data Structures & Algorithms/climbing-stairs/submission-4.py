@@ -1,4 +1,8 @@
 class Solution:
+    # memoization + hashmap
+    # o reach step n, you must come from n−1 (1 step) or n−2 (2 steps),
+    # so f(n)=f(n−1)+f(n−2). Use a dictionary (memo) to cache previously 
+    # computed results and prevent redundant recursive work
     def __init__(self):
         self.memo = {}
 

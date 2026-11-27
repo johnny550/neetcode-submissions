@@ -1,5 +1,6 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
+        # while loop
         dp=[i for i in range(n+1)]
         i=n
         while i<=n and i > -1:
