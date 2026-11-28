@@ -4,7 +4,6 @@ class Solution:
         res=len(sandwiches)
         tracker=Counter(students)
         
-        # print(tracker)
         for s in sandwiches:
             if tracker[s] > 0:
                 res -=1
@@ -12,6 +11,4 @@ class Solution:
             else:
                 return res
         
-        # print(tracker)
-        # return sum(tracker.values())
         return res

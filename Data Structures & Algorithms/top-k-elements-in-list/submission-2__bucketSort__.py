@@ -16,6 +16,7 @@ class Solution:
                 if len(result)==k:
                     return result
 
+
 sol=Solution() 
 print(sol.topKFrequent(["leetcode", "love", "coding", "i", "i", "love"], 2))
 # ["i", "love"]
@@ -33,5 +34,5 @@ print(sol.topKFrequent(["programming", "python", "algorithm","python", "programm
 )
 # ["python", "algorithm", "programming"]
 
-print(sol.topKFrequent(["a", "b", "a"], 5))
+print(sol.topKFrequent(["a", "b", "a"], 1))
 # ["a", "b"]

@@ -5,7 +5,6 @@ class Solution:
         # D: append 2 * score[-1]
         # C: pop
         tab=[]
-        finalScore=0
 
         for op in operations:
             if op == "+":

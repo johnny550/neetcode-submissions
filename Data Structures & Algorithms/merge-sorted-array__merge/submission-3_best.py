@@ -11,4 +11,6 @@ class Solution:
                 nums1[i] = nums2[j]
                 j+=1
             i+=1
-        nums1.sort()
+
+        # Probs not needed since nums1 and nums 2 were originally sorted
+        # nums1.sort()

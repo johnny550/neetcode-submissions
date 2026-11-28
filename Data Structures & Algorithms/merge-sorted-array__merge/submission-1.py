@@ -9,16 +9,14 @@ class Solution:
         # Use slice assignemnt nums1[:] to replace the entire contents of the original list object with the new elements
         # EFFETCS: truncates the list nums1 in place so that it only keeps its first m elements."
         nums1[:]=nums1[:m]
-        print(f"--> {nums1}")
+
         while i<len(nums1) and j<n:
             if nums1[i]>nums2[j]:
                 nums1.insert(i, nums2[j])
                 j+=1
             i+=1
         nums1.extend(nums2[j:])
-        print(nums1)
-        
-                    
 
-
-            
+        # Potentially worst that all other submissions
+        # We may need to shift all items in nums1 to the right using insert
+        # for as many items as nums2 contains
